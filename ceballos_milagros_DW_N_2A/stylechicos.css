@@ -1,0 +1,48 @@
+/* Estilos para pantallas pequeñas (xs y sm) */
+@media (max-width: 767px) {
+    /* portada */
+   
+    h1{
+    font-size: 2.5rem;
+    }
+
+    #portada h2{
+        font-size: 2.2rem;
+    }
+    .fondo-1 {
+        height: 60vw;
+    }
+    /*fin  portada */
+    /* Nosotras */
+
+    #nosotras{
+    padding-top: 200px;
+    }
+    p{
+    text-align: center;
+    }
+
+    .vino-1 img{
+    width: 40%;
+   
+
+    }
+
+    #Enovista iframe{
+    height: 30vh;
+    max-width: 500px;    
+    } 
+
+}
+
+/* Estilos para pantallas medianas (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* portada */
+   
+   
+    .fondo-1 {
+        height: 30vw;
+    }
+    /* fin portada */
+
+}

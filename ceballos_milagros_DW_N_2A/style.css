@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Barra de navegacion*/
+
+.navbar {
+background-color: #292929;
+border-bottom: 2px solid #fff; /* Borde inferior blanco */
+box-shadow: 0px 2px 5px 0px #888888; /* Sombreado blanco en el borde inferior */
+}
+
+/* Desenfoque del fondo */
+.navbar::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: inherit;
+filter: blur(8px); 
+z-index: -1;
+}
+
+/* texto */
+.navbar-dark .navbar-nav .nav-link {
+color: #fff;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 22px;
+}
+
+/* Cambio de color al pasar el ratón por encima */
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #B3286B;
+}
+
+
+/* Menu hamburguesa */
+.navbar-toggler {
+    border: none;
+  }
+
+.navbar-toggler:active {
+    border: none;
+    outline: none;
+    transform: translateY(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+/*para sacarle la linea de bootstrap */
+.navbar {
+--bs-navbar-toggler-focus-width: none;
+--bs-navbar-toggler-transition: none;
+}
+
+/* fin Menu hamburguesa */
+
+/* portada */
+
+#nosotras{
+    max-width: 1200px;
+}
+
+.fondo-1 {
+    background-image: url(imagenes/fondo-1.jpg);
+    height: 30vw; 
+    background-size: cover; 
+}
+
+h1 {
+    font-family: 'Fredericka the Great', serif;
+    color: #eee6e7;
+    font-size: 5vw; 
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#portada h2 {
+    font-family: 'Fredericka the Great', serif;
+    color: #eee6e7;
+    font-size: 4vw; 
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#portada h2{
+    font-family: 'Fredericka the Great', serif;
+    color: #eee6e7;
+    font-size: 4vw; 
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+img.img-fluid {
+    max-width: 60vw; 
+    
+}
+
+/* fin portada */
+
+/* Nosotras */
+h2{
+font-family: 'Dancing Script', cursive;
+color: #292929;
+font-size: 3.5rem; 
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+padding-bottom: 20px;
+}
+
+p{
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+padding-top: 20px;
+
+}
+
+.parrafo-2
+.parrafo-3
+.parrafo-4
+.parrafo-5-6{
+padding-top: 10px;
+}
+
+
+.btn-close {
+background-color: #B3286B; 
+border: none; 
+padding: 10px;
+--bs-btn-close-opacity: none;
+border-radius: 0rem;
+}
+
+.btn-vermas{
+background-color: #B3286B; 
+border: none; 
+padding: 5px 30px;
+--bs-btn-close-opacity: none;
+border-radius: 0rem;
+color: black;
+font-size: 1.5rem;
+font-family: 'Josefin Sans', sans-serif;
+margin-bottom: 10px;   
+}
+
+.carousel{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*pastillas*/
+
+#nuestras-uvas{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.pastilla {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+.imagen {
+width: 100%;
+height: auto;
+transition: opacity 0.3s;
+}
+  
+.texto {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+padding: 20px;
+box-sizing: border-box;
+text-align: justify;
+opacity: 0;
+transition: opacity 0.3s;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+  
+.btn-ver-mas {
+background-color: #B3286B;
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1rem;
+}
+  
+.pastilla:hover .imagen {
+opacity: 0.3;
+}
+  
+.pastilla:hover .texto {
+opacity: 1;
+color: white;
+}
+
+#nuestras-uvas h4{
+font-family: 'Dancing Script', cursive;
+font-size: 2.5rem;
+color: #B3286B;
+}
+
+/*video*/ 
+
+#Enovista h2 {
+padding-top: 15px;
+color: #fff;
+}
+#Enovista p {
+
+color: #fff;
+}
+
+#Enovista iframe{
+height: 50vh;
+max-width: 800px; 
+box-shadow: 
+    0 0 20px rgba(212, 22, 117, 0.5), /* Primera sombra */
+    0 0 20px rgba(252, 250, 250, 0.5);
+padding-bottom: 10px;
+} 
+
+.fondo-4 {
+background-image: url(imagenes/fondo-4.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 10px 0; 
+color: #fff;
+}
+
+.video-maria{
+padding-top: 30px;    
+}
+
+/*FORMULARIO*/
+
+#Contacto{
+padding-top: 40px;
+}
+
+#Contacto h2{
+color: #fff;
+padding-top: 20px;
+}
+
+.container-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 50vh; 
+background-image: url(imagenes/bodegas.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+padding-bottom: 20px;
+font-family: 'Josefin Sans', sans-serif;   
+}
+
+form {
+width: 100%;
+max-width: 600px;
+padding: 20px;
+border: 1px solid white;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente blanco */
+backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.form-group {
+margin-bottom: 20px; 
+}
+
+
+.mt-5 {
+margin-top: 0!important;
+}
+
+.btn-primary {
+background-color: #B3286B;
+color: #fff;
+border: none;
+border-radius: 0px;
+margin: 0;
+padding: 10px 20px; 
+font-weight: bold;
+font-size: 18px;
+}
+
+  
+.btn-primary:hover {
+background: rgba(252, 252, 252, 0.2); 
+color: #B3286B;
+}
+
+
+label{
+font-size: 16px;
+font-weight: bold;
+}
+
+.btn-outline-secondary {
+color: #292929; 
+margin: 0;
+padding: 0;
+height: 50px;
+width: 50px;
+border-radius:0px   
+}
+
+.btn-outline-secondary:hover {
+background-color: #B3286B;
+color: #fff; 
+}
+
+.botonesFinales {
+display: flex;
+justify-content: center; 
+gap: 30px;  
+}
+
+.input-group.has-validation>.dropdown-toggle:nth-last-child(n+4), .input-group.has-validation>.form-floating:nth-last-child(n+3)>.form-control, .input-group.has-validation>.form-floating:nth-last-child(n+3)>.form-select, .input-group.has-validation>:nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+/*FIN FORMULARIO*/
+
+/*FOOTER*/
+
+.footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 20px 0;
+    border-top: 2px solid #fff;
+    
+    
+}
+  
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+  
+.personal-info p {
+margin: 0;
+}
+  
+.social-media a {
+margin-right: 10px;
+}
+  
+.social-media img {
+width: 10%;
+}
+
+.social-media{
+padding-top: 15px;
+}
+  
+@keyframes aparecerDesaparecer {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+ 
+#barril {
+animation: aparecerDesaparecer 3s infinite;
+}
+
+
+.btn-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+z-index: 999;
+}
+.btn-top span {
+font-size: 24px;
+vertical-align: middle;
+} 
+
+/*FIN FOOTER*/
+
